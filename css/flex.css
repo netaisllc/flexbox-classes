@@ -1,1 +1,132 @@
-.flex{display:flex}.flex--inline{display:inline-flex}.flex--column{flex-direction:column}.flex--row{flex-direction:row}.flex--align-content--center{align-content:center}.flex--align-content--end{align-content:flex-end}.flex--align-content--start{align-content:flex-start}.flex--align-content--around{align-content:space-around}.flex--align-content--between{align-content:space-between}.flex--align-content--stretch{align-content:stretch}.flex--align-items--baseline{align-items:baseline}.flex--align-items--center{align-items:center}.flex--align-items--end{align-items:flex-end}.flex--align-items--start{align-items:flex-start}.flex--align-items--stretch{align-items:stretch}.flex--direction--row{flex-direction:row}.flex--direction--row-reverse{flex-direction:row-reverse}.flex--direction--column{flex-direction:column}.flex--direction--column-reverse{flex-direction:column-reverse}.flex--flow{flex-direction:row;flex-wrap:nowrap}.flex--wrap--nowrap{flex-wrap:nowrap}.flex--wrap--wrap{flex-wrap:wrap}.flex--wrap--wrap-reverse{flex-wrap:wrap-reverse}.flex--justify-content--center{justify-content:center}.flex--justify-content--end{justify-content:flex-end}.flex--justify-content--start{justify-content:flex-start}.flex--justify-content--around{justify-content:space-around}.flex--justify-content--between{justify-content:space-between}.flex--align-self--auto{align-self:auto}.flex--align-self--baseline{align-self:baseline}.flex--align-self--center{align-self:center}.flex--align-self--end{align-self:flex-end}.flex--align-self--start{align-self:flex-start}.flex-item{flex:1 0 auto}.flex-item--basis--auto{flex-basis:auto}.flex-item--grow--none{flex-grow:0}.flex-item--grow--1,.flex-item--grow-one{flex-grow:1}.flex-item--shrink--none{flex-grow:0}.flex-item--shrink--1,.flex-item--shrink-one{flex-grow:1}
+.flex {
+  display: flex;
+}
+.flex--inline {
+  display: inline-flex;
+}
+.flex--height__full {
+  height: 100%;
+}
+.flex--height__half {
+  height: 50%;
+}
+.flex--width__full {
+  width: 100%;
+}
+.flex--width__half {
+  width: 50%;
+}
+.flex--column {
+  flex-direction: column;
+}
+.flex--row {
+  flex-direction: row;
+}
+.flex--align-content__center {
+  align-content: center;
+}
+.flex--align-content__end {
+  align-content: flex-end;
+}
+.flex--align-content__start {
+  align-content: flex-start;
+}
+.flex--align-content__around {
+  align-content: space-around;
+}
+.flex--align-content__between {
+  align-content: space-between;
+}
+.flex--align-content__stretch {
+  align-content: stretch;
+}
+.flex--align-items__baseline {
+  align-items: baseline;
+}
+.flex--align-items__center {
+  align-items: center;
+}
+.flex--align-items__end {
+  align-items: flex-end;
+}
+.flex--align-items__start {
+  align-items: flex-start;
+}
+.flex--align-items__stretch {
+  align-items: stretch;
+}
+.flex--direction__row {
+  flex-direction: row;
+}
+.flex--direction__row-reverse {
+  flex-direction: row-reverse;
+}
+.flex--direction__column {
+  flex-direction: column;
+}
+.flex--direction__column-reverse {
+  flex-direction: column-reverse;
+}
+.flex--flow {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.flex--wrap__nowrap {
+  flex-wrap: nowrap;
+}
+.flex--wrap__wrap {
+  flex-wrap: wrap;
+}
+.flex--wrap__wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex--justify-content__center {
+  justify-content: center;
+}
+.flex--justify-content__end {
+  justify-content: flex-end;
+}
+.flex--justify-content__start {
+  justify-content: flex-start;
+}
+.flex--justify-content--around {
+  justify-content: space-around;
+}
+.flex--justify-content__between {
+  justify-content: space-between;
+}
+.flex--align-self__auto {
+  align-self: auto;
+}
+.flex--align-self__baseline {
+  align-self: baseline;
+}
+.flex--align-self__center {
+  align-self: center;
+}
+.flex--align-self__end {
+  align-self: flex-end;
+}
+.flex--align-self__start {
+  align-self: flex-start;
+}
+.flex-item {
+  flex: 1 0 auto;
+}
+.flex-item--basis__auto {
+  flex-basis: auto;
+}
+.flex-item--grow__none {
+  flex-grow: 0;
+}
+.flex-item--grow__1,
+.flex-item--grow__one {
+  flex-grow: 1;
+}
+.flex-item--shrink__none {
+  flex-grow: 0;
+}
+.flex-item--shrink__1,
+.flex-item--shrink__one {
+  flex-grow: 1;
+}

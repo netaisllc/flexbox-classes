@@ -13,7 +13,7 @@
 // a 'flex container' -- a block element that lays out its content according to
 // the flexbox model.
 //
-// Another possible value is 'inline-flex', which directs the element to behave like
+// Another possible value is 'inlne-flex', which directs the element to behave like
 // a 'flex container' -- an inline element that lays out its content according to
 // the flexbox model.
 //
@@ -24,7 +24,20 @@
 .flex--inline {
     display: inline-flex;
 }
-// Common uses
+// Container heights and widths
+.flex--height__full {
+    height: 100%;
+}
+.flex--height__half {
+    height: 50%;
+}
+.flex--width__full {
+    width: 100%;
+}
+.flex--width__half {
+    width: 50%;
+}
+// Common containers
 .flex--column {
     flex-direction: column;
 }
@@ -42,22 +55,22 @@
 // Applies to:      multi-line flex containers
 // Formal syntax:   center | flex-end | flex-start | space-around | space-between | stretch
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
-.flex--align-content--center {
+.flex--align-content__center {
     align-content: center;
 }
-.flex--align-content--end {
+.flex--align-content__end {
     align-content: flex-end;
 }
-.flex--align-content--start {
+.flex--align-content__start {
     align-content: flex-start;
 }
-.flex--align-content--around {
+.flex--align-content__around {
     align-content: space-around;
 }
-.flex--align-content--between {
+.flex--align-content__between {
     align-content: space-between;
 }
-.flex--align-content--stretch {
+.flex--align-content__stretch {
     align-content: stretch;
 }
 
@@ -70,19 +83,19 @@
 // Applies to:      flex containers
 // Formal syntax:   baseline | center | flex-end | flex-start | stretch
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
-.flex--align-items--baseline {
+.flex--align-items__baseline {
     align-items: baseline;
 }
-.flex--align-items--center {
+.flex--align-items__center {
     align-items: center;
 }
-.flex--align-items--end {
+.flex--align-items__end {
     align-items: flex-end;
 }
-.flex--align-items--start {
+.flex--align-items__start {
     align-items: flex-start;
 }
-.flex--align-items--stretch {
+.flex--align-items__stretch {
     align-items: stretch;
 }
 
@@ -101,16 +114,16 @@
 // Applies to:      flex containers
 // Formal syntax:   Formal syntax: row | row-reverse | column | column-reverse
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
-.flex--direction--row {
+.flex--direction__row {
     flex-direction: row;
 }
-.flex--direction--row-reverse {
+.flex--direction__row-reverse {
     flex-direction: row-reverse;
 }
-.flex--direction--column {
+.flex--direction__column {
     flex-direction: column;
 }
-.flex--direction--column-reverse {
+.flex--direction__column-reverse {
     flex-direction: column-reverse;
 }
 
@@ -140,13 +153,13 @@
 // Applies to:      flex containers
 // Formal syntax:   nowrap | wrap | wrap-reverse
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
-.flex--wrap--nowrap {
+.flex--wrap__nowrap {
     flex-wrap: nowrap;
 }
-.flex--wrap--wrap {
+.flex--wrap__wrap {
     flex-wrap: wrap;
 }
-.flex--wrap--wrap-reverse {
+.flex--wrap__wrap-reverse {
     flex-wrap: wrap-reverse;
 }
 
@@ -164,19 +177,19 @@
 // Applies to:      flex containers
 // Formal syntax:   center | flex-end | flex-start | space-around | space-between
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-.flex--justify-content--center {
+.flex--justify-content__center {
     justify-content: center;
 }
-.flex--justify-content--end {
+.flex--justify-content__end {
     justify-content: flex-end;
 }
-.flex--justify-content--start {
+.flex--justify-content__start {
     justify-content: flex-start;
 }
 .flex--justify-content--around {
     justify-content: space-around;
 }
-.flex--justify-content--between {
+.flex--justify-content__between {
     justify-content: space-between;
 }
 
@@ -194,19 +207,19 @@
 // Applies to:      flex items, including in-flow pseudo-elements
 // Formal syntax:   auto | baseline | center | flex-end | flex-start | stretch
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
-.flex--align-self--auto {
+.flex--align-self__auto {
     align-self: auto;
 }
-.flex--align-self--baseline {
+.flex--align-self__baseline {
     align-self: baseline;
 }
-.flex--align-self--center {
+.flex--align-self__center {
     align-self: center;
 }
-.flex--align-self--end {
+.flex--align-self__end {
     align-self: flex-end;
 }
-.flex--align-self--start {
+.flex--align-self__start {
     align-self: flex-start;
 }
 
@@ -246,7 +259,7 @@
 // Applies to:      flex items, including in-flow pseudo-elements
 // Formal syntax:   content | <'width'>
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
-.flex-item--basis--auto {
+.flex-item--basis__auto {
     flex-basis: auto;
 }
 
@@ -260,10 +273,10 @@
 // Applies to:      flex items, including in-flow pseudo-elements
 // Formal syntax:   <number> (Negative numbers are invalid)
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
-.flex-item--grow--none {
+.flex-item--grow__none {
     flex-grow: 0;
 }
-.flex-item--grow--1, .flex-item--grow-one {
+.flex-item--grow__1, .flex-item--grow__one {
     flex-grow: 1;
 }
 // Other flex-item--grow-XXXXXXX classes as needed.
@@ -278,10 +291,10 @@
 // Applies to:      flex items, including in-flow pseudo-elements
 // Formal syntax:   <number> (Negative numbers are invalid)
 // @mdn:            https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
-.flex-item--shrink--none {
+.flex-item--shrink__none {
     flex-grow: 0;
 }
-.flex-item--shrink--1, .flex-item--shrink-one {
+.flex-item--shrink__1, .flex-item--shrink__one {
     flex-grow: 1;
 }
 // Other flex-item--shrink-XXXXXXX classes as needed.
