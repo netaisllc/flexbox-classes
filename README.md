@@ -41,3 +41,5 @@ Not sure why this is, and I should point out that not everybody does this. For e
 
 ## Should I use this?
 Seriously -- you're asking?
+
+For learners, check out the simple guide in the handouts folder.  We can't take much credit for it; another expert developed most of the content. We added a few remarks and made it more "page" oriented".  (Thanks, Joni!)
