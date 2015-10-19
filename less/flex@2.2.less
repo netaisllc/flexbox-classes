@@ -24,10 +24,16 @@
 .flexed-item {
   flex: 1 1 0;
   -webkit-flex: 1 1 0;
+  /* VERY OLD Safari, iOS  */
+  -webkit-box-flex: 1;
+  box-flex: 1;
 }
 .flexed-item--auto {
   flex: 1 1 auto;
   -webkit-flex: 1 1 auto;
+  /* VERY OLD Safari, iOS  */
+  -webkit-box-flex: 1;
+  box-flex: 1;
 }
 /*  DIRECTION ( ORIENTATION )  -------------------------------------------------
     Summary:    specifies how flex items are placed in the flex container defining
